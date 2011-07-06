@@ -1,0 +1,29 @@
+<script>
+$(function(){
+   var path = location.pathname.substring(1);
+   if (path === '') path = '/';
+   if ( path )
+     $('#menu a[href$="' + path + '"]').attr('class', 'selected');
+ });
+</script>
+<div class="span-5">				
+	<img class="shadow" src="/content/images/logo.png" style="left: -40px; position: relative; top: 20px"/> 
+
+	<ul class="menu" id="menu"> 
+		<li> 
+			<a href="/">collection</a>
+		</li> 
+		<li> 
+			<a href="/behind-the-scene">behind the scene</a>
+		</li> 
+		<li> 
+			press
+		</li> 
+		<li> 
+			<a href="/shops">shops</a>
+		</li> 
+		<li> 
+			<a href="/contact">contact</a>
+		</li> 
+	</ul> 
+</div>

@@ -1,0 +1,20 @@
+application: caldidesigncom
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /behind-the-scene.*
+  script: behind-the-scene.py   
+
+- url: /content
+  static_dir: content
+
+- url: /contact
+  script: contact.py
+  
+- url: /shops
+  script: shops.py
+
+- url: .*
+  script: main.py

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Caldi Design - Behind the Scene{% endblock %}
+
+{% block headscript %}
+<script> 
+	$(document).ready(function() {
+		$('#gallery-vertical').AccordionImageMenu(
+			{
+				'width':250,
+				'openItem':0,
+				'openDim': 350,
+				'closeDim':100,
+				'border': 1,
+				'color': '#fff',
+				'position': 'vertical'
+			} );
+	    });
+</script>
+{% endblock %}
+
+{% block main %}
+<div class="span-7" style="top: 70px; position: relative"> 
+	<h3 class="loud">behind the scene</h3> 
+	asÃ¶ldfjkasldfÃ¶j aslÃ¶fdj aslÃ¶dfjk aslÃ¶dfkjas Ã¶ldfkjas dfÃ¶lkasjf
+	asÃ¶dlfjkaslÃ¶dfk jaslÃ¶dfjk aslÃ¶kdfj asÃ¶ldfkja sÃ¶ldfjkas Ã¶ldfkjas fd
+	asÃ¶ldfkjas Ã¶ldfkjas Ã¶dlfkjas dflÃ¶kjas dfÃ¶lkajsfd Ã¶laskjfd aÃ¶lskdfj a
+	asÃ¶dlfjkaslÃ¶dfjkaslÃ¶dfkjas Ã¶ldfkja slÃ¶dfkja sÃ¶ldfkja sÃ¶ldfkaj sf
+	asÃ¶dlfkj asÃ¶ldfjk asldÃ¶kfj asÃ¶lkdfj aslÃ¶kdfj aslÃ¶kdfja sÃ¶ldfkj 
+	alÃ¶skdfjasÃ¶ldkf jaÃ¶sldfjk asÃ¶lkdfj aslÃ¶kdfj aslÃ¶dfkja slÃ¶fkjs 
+</div> 
+
+<div class="span-1 colborder" style="border-right: 2px solid #939393; height: 553px; top: 20px; position: relative"> 
+	&nbsp;	
+</div> 
+
+<div class="span-5 last" style="top: 70px; position: relative"> 
+	<ul id="gallery-vertical"> 
+			<li> 
+				<a href="#nogo"> 
+					<img src="/content/images/b1.jpg" alt="#1" title="#1"> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#nogo"> 
+					<img src="/content/images/b2.jpg" alt="#1" title="#1"> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#nogo"> 
+					<img src="/content/images/b3.jpg" alt="#1" title="#1"> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#nogo"> 
+					<img src="/content/images/b4.jpg" alt="#1" title="#1"> 
+				</a> 
+			</li> 
+		</ul> 
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+	{% extends "base.html" %}
+
+	{% block title %}Caldi Design{% endblock %}
+
+	{% block headscript %}
+	<script>
+	$(document).ready(function() {
+		$('#gallery').AccordionImageMenu(
+			{
+				'height':593,
+				'openItem':3,
+				'openDim': 380,
+				'closeDim':110,
+				'border': 1,
+				'color': '#fff'
+			} );
+	    });
+	</script>
+	{% endblock %}
+
+	{% block main %}
+		<div class="span-15 last"> 
+				<ul id="gallery"> 
+						<li> 
+							<a href="#nogo"> 
+								<img src="/content/images/b1.jpg" alt="#1" title="#1" width="486" height="593"> 
+							</a> 
+						</li> 
+						<li> 
+							<a href="#nogo"> 
+								<img src="/content/images/b2.jpg" alt="#1" title="#1" width="486" height="593"> 
+							</a> 
+						</li> 
+						<li> 
+							<a href="#nogo"> 
+								<img src="/content/images/b3.jpg" alt="#1" title="#1" width="486" height="593"> 
+							</a> 
+						</li> 
+						<li> 
+							<a href="#nogo"> 
+								<img src="/content/images/b4.jpg" alt="#1" title="#1" width="486" height="593"> 
+							</a> 
+						</li> 
+						
+					</ul> 
+		</div>
+	{% endblock %}

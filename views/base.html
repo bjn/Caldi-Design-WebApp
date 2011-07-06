@@ -1,0 +1,38 @@
+<html> 
+	<head> 
+		<title>{% block title %}{% endblock %}</title> 
+		<link rel="stylesheet" href="/content/styles/blueprint/screen.css" type="text/css" media="screen, projection"> 
+		<link rel="stylesheet" href="/content/styles/blueprint/print.css" type="text/css" media="print"> 
+		  <!--[if lt IE 8]>
+		    <link rel="stylesheet" href="/content/styles/blueprint/ie.css" type="text/css" media="screen, projection">
+		  <![endif]--> 
+		<link rel="stylesheet" type="text/css" href="/content/styles/site.css" />	
+		<link rel="stylesheet" href="/content/styles/accordionImageMenu.css" type="text/css" /> 
+		<script type="text/javascript" src="/content/scripts/jquery-1.5.1.min.js"></script> 
+		<script type="text/javascript" src="/content/scripts/jquery-ui-1.8.10.custom.min_.js"></script> 
+		<script type="text/javascript" src="/content/scripts/accordionImageMenu-0.4.min_.js"></script> 
+		
+		{% block headscript %}
+		{% endblock %}
+		
+	</head> 
+	<body> 
+		<div class="container"> 
+			
+		{% include 'menu.html' %}
+			
+			<div class="span-1 colborder" style="border-right: 2px solid #939393; height: 553px; top: 20px; position: relative"> 
+			&nbsp;	
+			</div> 
+			<div class="span-1"> 
+				&nbsp;
+			</div> 
+			
+			{% block main %}
+			
+			{% endblock %}
+
+		</div> 
+	
+	</body> 
+</html>
