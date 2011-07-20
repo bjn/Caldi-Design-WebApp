@@ -1,14 +1,21 @@
 <html> 
 	<head> 
-		<title>{% block title %}{% endblock %}</title> 
+		<title>{% block title %}{% endblock %}</title>
+		<META NAME="DESCRIPTION" CONTENT="Caldi design ">
+		<META NAME="KEYWORDS" CONTENT="fashion,perth,caldi,design,clothes,western australia,shop,online,fancy,modern">
+			
 		<link rel="stylesheet" href="/content/styles/blueprint/screen.css" type="text/css" media="screen, projection"> 
 		<link rel="stylesheet" href="/content/styles/blueprint/print.css" type="text/css" media="print"> 
+
 		  <!--[if lt IE 8]>
 		    <link rel="stylesheet" href="/content/styles/blueprint/ie.css" type="text/css" media="screen, projection">
 		  <![endif]--> 
+
+		<link rel="stylesheet" href="/content/styles/zoombox.css" type="text/css" media="screen"> 
 		<link rel="stylesheet" type="text/css" href="/content/styles/site.css" />	
-		<link rel="stylesheet" href="/content/styles/accordionImageMenu.css" type="text/css" /> 
+		<link rel="stylesheet" href="/content/styles/accordionImageMenu.css" type="text/css">
 		<script type="text/javascript" src="/content/scripts/jquery-1.5.1.min.js"></script> 
+		<script type="text/javascript" src="/content/scripts/zoombox.js"></script> 
 		<script type="text/javascript" src="/content/scripts/jquery-ui-1.8.10.custom.min_.js"></script> 
 		<script type="text/javascript" src="/content/scripts/accordionImageMenu-0.4.min_.js"></script> 
 		
@@ -17,21 +24,28 @@
 		
 	</head> 
 	<body> 
+		
 		<div class="container"> 
 			
-		{% include 'menu.html' %}
-			
+			{% include 'menu.html' %}
+
 			<div class="span-1 colborder" style="border-right: 2px solid #939393; height: 553px; top: 20px; position: relative"> 
 			&nbsp;	
 			</div> 
+			
 			<div class="span-1"> 
 				&nbsp;
 			</div> 
-			
+
 			{% block main %}
-			
+
 			{% endblock %}
 
+			<div class="span-24 last">
+				<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=174323759299771&amp;xfbml=1"></script><fb:like 	
+				href="http://www.facebook.com/pages/Caldi/160680957283570?ref=ts" send="false" width="450" show_faces="false" font=""></fb:like>
+			</div>
+			
 		</div> 
 	
 	</body> 

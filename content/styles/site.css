@@ -4,7 +4,8 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#939393', endColorstr='#dcdcdc'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#939393), to(#dcdcdc)); /* for webkit browsers */
 	background: -moz-linear-gradient(top,  #939393,  #dcdcdc); /* for firefox 3.6+ */
-	
+	margin:50px 0px; padding:0px;
+	text-align: center;
 	font-family: "Lucida Console";
 }
 
@@ -21,6 +22,7 @@ body {
 .menu {
 	list-style-type: none;
 	margin-top: 50px;
+	height: 470px;
 }
 
 .menu a {
@@ -29,13 +31,21 @@ body {
 }
 
 .menu a.selected {
-	color: red;
+}
+
+.menu a.selected img {
+	display: inline;
+}
+
+.menu a img {
+	display: none;
 }
 
 .container {
-	background: #d9d9d9;
+	background: #EDEDED;
 	margin-top: 120px;
 	height: 593px;
+	text-align: left;
 }
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:none;}

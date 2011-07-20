@@ -3,6 +3,11 @@
 {% block title %}Caldi Design - Shops{% endblock %}
 
 {% block headscript %}
+<script type="text/javascript">
+$(function() {
+	$('a.zoombox').zoombox();
+});
+</script>
 {% endblock %}
 
 {% block main %}
@@ -29,7 +34,7 @@
 					australian wide
 				</td>
 			</tr>
-		</table>
-		Stockist
+		</table>		
+		<a href="/content/images/montage-flyer.jpg" class="zoombox"><img src="/content/images/montage-flyer.jpg" width="150" height="200"></a>
 	</div>
 {% endblock %}
